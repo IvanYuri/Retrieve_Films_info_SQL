@@ -32,8 +32,9 @@ Here are some commands in SQL you can run to retrieve the data:
 
  SELECT * FROM Fimls;
  SELECT Title, ReleaseYear FROM Fimls;
- SELECT Title, ProductionCompany, ReleaseYear FROM Films WHERE Writer IS 'James Cameron';
+ SELECT DISTINTICT Title, ProductionCompany, ReleaseYear FROM Films WHERE Writer IS 'James Cameron';
+ SELECT Title, Actor1, ReleaseYear FROM Films LIMIT 20;
  SELECT Title, Actor1, ReleaseYear FROM Films WHERE ReleaseYear>=2015;
-
+ 
 
 Alternatively you can update the Python code accondingly to your need. 
